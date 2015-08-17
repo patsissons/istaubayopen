@@ -22,7 +22,7 @@ function updateStatus(data) {
 }
 
 function updateDisclaimer(data) {
-  $('.disclaimer-text').html(data.disclaimerText);
+  $('.disclaimer-text').html(data.disclaimer);
 }
 
 function updateLocation(data) {
