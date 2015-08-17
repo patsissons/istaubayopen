@@ -11,9 +11,8 @@ $borderRadius: 5px;
 @import "themes/dark.scss";
 
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
+  margin: 0;
+  background: $darkBackground;
   padding: 0.2em 0;
 }
 
