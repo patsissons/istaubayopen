@@ -21,10 +21,6 @@ function updateStatus(data) {
   }
 }
 
-function updateDisclaimer(data) {
-  $('.disclaimer-text').html(data.disclaimer);
-}
-
 function updateLocation(data) {
   var address = data.location.address + '<br/>' + data.location.city + ', ' + data.location.province + '<br/>' + data.location.postalcode + ' ' + data.location.country;
   var html = $(document.createElement('a')).html(address).attr('href', 'http://maps.google.com/?q=' + data.location.address + ' ' + data.location.city + ' ' + data.location.province + ' ' + data.location.postalcode + ' ' + data.location.country);
@@ -76,7 +72,6 @@ $(document).ready(function() {
 
 $.getJSON('config.json', function(data) {
   updateStatus(data);
-  updateDisclaimer(data);
   updateLocation(data);
   updateHours(data);
   updateContact(data);
