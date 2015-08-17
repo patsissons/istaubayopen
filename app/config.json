@@ -1,0 +1,26 @@
+{
+  "status": "On Vacation Until August",
+  "disclaimeText": "<p>This site is in no way affiliated with <a href=\"http://www.yelp.ca/biz/pho-tau-bay-edmonton\">Pho Tau Bay</a> in <a href=\"http://www.edmonton.ca/\">Edmonton, Alberta, Canada</a>. It is here to provide its fans and patrons an easy way to know if the business is open, closed for the night, or if they're \"<em>on vacation</em>.\" Tweet with the hashtag #istaubayopen (or use the buttons above) to let everyone know if <strong>The Bay</strong> is <strong>open</strong> or <strong>closed</strong>. <strong>:)</strong></p>\n          <p>This site is not directly related to the old <a href=\"http://istaubayopen.com\">http://istaubayopen.com</a> site that is no longer in service, but rather is inspired to build upon the idea and improve the experience. If you visit <strong>Pho Tau Bay</strong>, please help everyone out and post a tweet that it's open or closed. Unfortunately, istaubayopen.com is not *<em>available for purchase</em>* (asking price is over $1,000 and I'm more than happy to continue using a .ca domain).</p>",
+  "location": {
+    "address": "10660 98 Street NW",
+    "city": "Edmonton",
+    "province": "AB",
+    "postalcode": "T5H 2N7",
+    "country": "Canada"
+  },
+  "timezone": "America/Edmonton",
+  "hoursLink": "https://plus.google.com/111175640575796165679",
+  "hours": {
+    "Sunday": null,
+    "Monday": { "open": 1030, "close": 1830 },
+    "Tuesday": { "open": 1030, "close": 1830 },
+    "Wednesday": { "open": 1030, "close": 1830 },
+    "Thursday": { "open": 1030, "close": 1830 },
+    "Friday": { "open": 1030, "close": 2030 },
+    "Satuday": { "open": 1030, "close": 2030 }
+  },
+  "contact": {
+    "phone": "+1-780-421-0807",
+    "twitter": "Pho_Tau_Bay"
+  }
+}

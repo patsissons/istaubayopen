@@ -131,6 +131,11 @@ a {
     padding-bottom: $grid-gutter-width;
   }
 
+  .today {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
   .twitter-mention-button {
     margin-top: $grid-gutter-width;
   }
