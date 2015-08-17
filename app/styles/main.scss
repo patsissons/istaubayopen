@@ -44,6 +44,18 @@ a {
   box-shadow: 0 2px 6px $highlightShadow inset;
 }
 
+.dev {
+  background-color: $infoBackground;
+  margin-top: $grid-gutter-width * -2;
+
+  p {
+    padding: $grid-gutter-width * 2;
+    margin: 0;
+    font-size: 2em;
+    color: $bannerForeground;
+  }
+}
+
 .banner {
 
   .image {
@@ -110,7 +122,6 @@ a {
 
 .info {
   background-color: $infoBackground;
-  border-radius: $borderRadius;
   margin: $grid-gutter-width 0;
 
   h4 {
