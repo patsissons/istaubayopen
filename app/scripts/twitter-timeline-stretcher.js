@@ -1,9 +1,7 @@
 'use strict';
 
-window.onload = function() {
-  var div = document.getElementsByClassName('twitter-timeline')[0].contentDocument.getElementsByClassName('twitter-timeline')[0];
-  var stream = div.getElementsByClassName('stream')[0];
-  div.style.maxWidth = '100%';
-  // 17px puts the scrollbar off screen
-  stream.style.width = (div.offsetWidth + 17) + 'px';
-};
+$(window).on('load', function() {
+  var div = $('.twitter-timeline').first().contents().find('.twitter-timeline');
+  div.css('max-width', '100%');
+  div.find('.stream').css('width', (div.width() + 17) + 'px');
+});
