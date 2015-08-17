@@ -61,7 +61,7 @@ a {
     text-shadow: $bannerTextShadow 3px 1px 5px;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 3em;
   }
 }
 
@@ -149,6 +149,7 @@ a {
     .banner {
       h1 {
         padding: 50px 0;
+        font-size: 5em;
       }
     }
   }
