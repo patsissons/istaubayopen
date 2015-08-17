@@ -68,6 +68,12 @@ function updateContact(data) {
     .append($(document.createElement('a')).attr('class', 'twitter-mention-button').attr('href', 'https://twitter.com/intent/tweet?screen_name=' + data.contact.twitter).attr('data-dnt', 'true'));
 }
 
+$(document).ready(function() {
+  if (document.location.hostname !== 'istaubayopen.ca') {
+    $('.dev > .container').append($(document.createElement('p')).html('This is a development site. Please use <a href="http://istaubayopen.ca/">http://istaubayopen.ca/</a> instead.'));
+  }
+})
+
 $.getJSON('config.json', function(data) {
   updateStatus(data);
   updateDisclaimer(data);
