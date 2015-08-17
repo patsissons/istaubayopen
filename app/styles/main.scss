@@ -6,8 +6,9 @@ $borderRadius: 5px;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "themes/dark.scss";
 // endbower
+
+@import "themes/dark.scss";
 
 .browsehappy {
   margin: 0.2em 0;
