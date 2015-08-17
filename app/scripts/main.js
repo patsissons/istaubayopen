@@ -72,7 +72,7 @@ $(document).ready(function() {
   if (document.location.hostname !== 'istaubayopen.ca') {
     $('body').prepend('<div class="dev"><div class="container"><p>This is a development site. Please use <a href="http://istaubayopen.ca/">http://istaubayopen.ca/</a> instead.</p></div></div>');
   }
-})
+});
 
 $.getJSON('config.json', function(data) {
   updateStatus(data);
