@@ -1,0 +1,24 @@
+
+$background: #eaeaea;
+$lightBackground: #ffffff;
+$darkBackground: #bababa;
+
+$foreground: #1a1a1a;
+$strongForeground: #141414;
+$linkForeground: #1487d4;
+$linkHoverForeground: #0f5b8e;
+
+$highlightColor: #cfcfcf;
+$highlightShadow: $highlightColor;
+
+$bannerForeground: $lightBackground;
+$bannerTextShadow: $foreground;
+
+$openBackground: #5ed45e;
+$closedBackground: #ff7171;
+$openClosedForeground: $foreground;
+
+$infoBackground: $darkBackground;
+$infoHeaderForeground: $linkForeground;
+$infoLinkForeground: $strongForeground;
+$infoLinkHoverForeground: $linkHoverForeground;
