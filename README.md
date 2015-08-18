@@ -6,6 +6,11 @@ This is a simple website that uses twitter to allow patrons of Pho Tau Bay to re
 
 This site was built using the [`generator-webapp`](https://github.com/yeoman/generator-webapp) template from [yeoman](http://yeoman.io/generators/).
 
+### Getting Started
+
+* `npm install`
+* `bower install`
+
 ### Making Changes
 
 * Run `grunt serve` to start a local web server that will automatically reload when changes are detected to the index file
