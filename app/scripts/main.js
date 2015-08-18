@@ -61,7 +61,7 @@ function updateContact(data) {
   $('.contact-text')
     .append($(document.createElement('a')).attr('href', 'tel:' + data.contact.phone).html(data.contact.phone))
     .append('<br/>')
-    .append($(document.createElement('a')).attr('class', 'twitter-mention-button').attr('href', 'https://twitter.com/intent/tweet?screen_name=' + data.contact.twitter).attr('data-dnt', 'true'));
+    .append($(document.createElement('a')).attr('class', 'twitter-mention-button').attr('href', 'https://twitter.com/intent/tweet?screen_name=' + data.contact.twitter).attr('data-dnt', 'true').html('@' + data.contact.twitter));
 }
 
 $(document).ready(function() {
