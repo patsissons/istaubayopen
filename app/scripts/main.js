@@ -75,4 +75,9 @@ $.getJSON('config.json', function(data) {
   updateLocation(data);
   updateHours(data);
   updateContact(data);
+
+  // we put this here so that we render twitter buttons and widgets after we perform our async config data load
+  /*eslint-disable*/
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  /*eslint-enable*/
 });
