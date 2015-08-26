@@ -21,7 +21,13 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+
+    googleAnalyticsId: 'UA-53951627-2',
+    hashtag: 'istaubayopen',
+    name: 'Pho Tau Bay',
+    twitterMaintainer: 'patsissons',
+    twitterWidgetId: '578037027569975297'
   };
 
   // Define the configuration for all the tasks
@@ -54,6 +60,10 @@ module.exports = function (grunt) {
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'postcss']
+      },
+      includes: {
+        files: ['includes/*.html'],
+        tasks: ['replace']
       }
     },
 
@@ -371,6 +381,49 @@ module.exports = function (grunt) {
       }
     },
 
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'hashtag',
+              replacement: '<%= config.hashtag %>'
+            },
+            {
+              match: 'name',
+              replacement: '<%= config.name %>'
+            },
+            {
+              match: 'twitterWidgetId',
+              replacement: '<%= config.twitterWidgetId %>'
+            },
+            {
+              match: 'twitterMaintainer',
+              replacement: '<%= config.twitterMaintainer %>'
+            },
+            {
+              match: 'googleAnalyticsId',
+              replacement: '<%= config.googleAnalyticsId %>'
+            },
+            {
+              match: 'disclaimer',
+              replacement: '<%= grunt.file.read("includes/disclaimer.html") %>'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: [
+              '<%= config.app %>/index.html'
+            ],
+            dest: '<%= config.dist %>'
+          }
+        ]
+      }
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -428,6 +481,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    //'replace',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -436,6 +490,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
+    'replace',
     'modernizr',
     'filerev',
     'usemin',
