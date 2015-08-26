@@ -1,0 +1,170 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+$grid-gutter-width: 10px !default;
+
+$borderRadius: 5px;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "themes/dark.scss";
+
+.browsehappy {
+  margin: 0;
+  background: $darkBackground;
+  padding: 0.2em 0;
+}
+
+body {
+  padding-bottom: $grid-gutter-width * 2;
+  background-color: $background;
+  color: $foreground;
+  text-align: center;
+}
+
+strong {
+  color: $strongForeground;
+}
+
+a {
+  color: $linkForeground;
+  text-decoration: none;
+
+  &:hover {
+    color: $linkHoverForeground;
+    text-decoration: none;
+  }
+}
+
+.highlight {
+  border: 1px solid $highlightColor;
+  box-shadow: 0 2px 6px $highlightShadow inset;
+}
+
+.dev {
+  background-color: $infoBackground;
+
+  p {
+    padding: $grid-gutter-width * 2;
+    margin: 0;
+    font-size: 2em;
+    color: $bannerForeground;
+  }
+}
+
+.banner {
+  margin-top: $grid-gutter-width * 2;
+
+  .image {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $borderRadius;
+    max-height: 480px;
+  }
+
+  h1 {
+    padding: 10px 0;
+    text-align: center;
+    color: $bannerForeground;
+    text-shadow: $bannerTextShadow 3px 1px 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 3em;
+  }
+}
+
+.content {
+
+  .button {
+    color: $openClosedForeground;
+    border-radius: $borderRadius;
+    padding: $grid-gutter-width;
+    margin-top: $grid-gutter-width;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .twitter-hashtag-button {
+      margin-top: $grid-gutter-width;
+    }
+  }
+
+  .open {
+    background-color: $openBackground;
+  }
+
+  .closed {
+    background-color: $closedBackground;
+  }
+
+  .twitter {
+    border-radius: $borderRadius;
+    margin-top: $grid-gutter-width;
+    background: $lightBackground;
+    padding: $grid-gutter-width;
+
+    .twitter-timeline {
+      width: 100% !important;
+    }
+  }
+}
+
+.disclaimer {
+  margin-top: $grid-gutter-width * 2;
+}
+
+.info {
+  background-color: $infoBackground;
+  margin: $grid-gutter-width 0;
+
+  h4 {
+    color: $infoHeaderForeground;
+    padding-top: $grid-gutter-width;
+  }
+
+  p {
+    padding-bottom: $grid-gutter-width;
+  }
+
+  .today {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  .twitter-mention-button {
+    margin-top: $grid-gutter-width;
+  }
+
+  a {
+    color: $infoLinkForeground;
+
+    &:hover {
+      color: $infoLinkHoverForeground;
+    }
+  }
+}
+
+.footer {
+  .twitter-hashtag-button {
+    margin-left: ceil($grid-gutter-width / 2);
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .container {
+    max-width: 960px;
+
+    .banner {
+      h1 {
+        padding: 50px 0;
+        font-size: 5em;
+      }
+    }
+  }
+}

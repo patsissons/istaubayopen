@@ -1,0 +1,25 @@
+{
+  "status": "",
+  "location": {
+    "address": "10660 98 Street NW",
+    "city": "Edmonton",
+    "province": "AB",
+    "postalcode": "T5H 2N7",
+    "country": "Canada"
+  },
+  "timezone": "America/Edmonton",
+  "hoursLink": "https://plus.google.com/111175640575796165679",
+  "hours": {
+    "Sunday": null,
+    "Monday": { "open": 1030, "close": 1830 },
+    "Tuesday": { "open": 1030, "close": 1830 },
+    "Wednesday": { "open": 1030, "close": 1830 },
+    "Thursday": { "open": 1030, "close": 1830 },
+    "Friday": { "open": 1030, "close": 2030 },
+    "Satuday": { "open": 1030, "close": 2030 }
+  },
+  "contact": {
+    "phone": "+1-780-421-0807",
+    "twitter": "Pho_Tau_Bay"
+  }
+}
