@@ -16,3 +16,7 @@ This site was built using the [`generator-webapp`](https://github.com/yeoman/gen
 * Run `grunt serve` to start a local web server that will automatically reload when changes are detected to the index file
 * Run `grunt` to build the site and produce a `dist` folder
 * Copy all files in `dist` to the remote server
+
+### Twitter Timeline Widget
+
+In order to maximize visibility and reduce clutter to the timeline, we can set the timeline widget to query `istaubayopen -RT` (no `#` so that we catch links as well) and `-RT` to exclude retweets.
