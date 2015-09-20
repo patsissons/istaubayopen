@@ -12,7 +12,7 @@ function updateStatus(data) {
     var hours = data.hours[day];
     var cur = parseInt(now.format('Hmm'));
 
-    if (cur >= hours.open && cur < hours.close) {
+    if (hours != null && cur >= hours.open && cur < hours.close) {
       $('.status-text').html('Open');
     }
     else {
