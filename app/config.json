@@ -16,7 +16,7 @@
     "Wednesday": { "open": 1030, "close": 1830 },
     "Thursday": { "open": 1030, "close": 1830 },
     "Friday": { "open": 1030, "close": 2030 },
-    "Satuday": { "open": 1030, "close": 2030 }
+    "Saturday": { "open": 1030, "close": 2030 }
   },
   "contact": {
     "phone": "+1-780-421-0807",
