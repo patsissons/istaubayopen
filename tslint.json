@@ -1,0 +1,14 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+    "jsRules": {},
+    "rules": {
+      "interface-name" : [true, "never-prefix"],
+      "no-implicit-dependencies": [true, ["~"]],
+      "no-submodule-imports": [true, "~"],
+      "quotemark": [ true, "single", "jsx-double" ],
+      "semicolon": [ true, "always", "ignore-bound-class-methods" ],
+      "trailing-comma": [ true, { "singleline": "never", "multiline": "always", "esSpecCompliant": true } ]
+    },
+    "rulesDirectory": ["tslint-plugin-prettier"]
+}

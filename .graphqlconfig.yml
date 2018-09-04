@@ -1,0 +1,2 @@
+projects: istaubayopen: schemaPath: schema.graphql;
+includes: ['src/**/*.{graphql,ts,tsx}'];
